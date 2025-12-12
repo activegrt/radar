@@ -452,8 +452,8 @@
   <script>
     // Initialize variables
     let selectedValue = document.getElementById('model-select')?.value || 'radar_list';
-    let pdfFilePath = 'https://activegrt.github.io/Reports/' + selectedValue + '.pdf';
-    let fileUrl = 'https://activegrt.github.io/Reports/' + selectedValue + '.txt';
+    let pdfFilePath = 'https://activegrt.github.io/radar/' + selectedValue + '.pdf';
+    let fileUrl = 'https://activegrt.github.io/radar/' + selectedValue + '.txt';
     let chart_ref = document.getElementById('valuation-select')?.value || '/';
     
     let sectorData = {};
@@ -690,7 +690,7 @@
               return `<td><span class="tag ${tag}">${formatIndianNumber(val)}%</span></td>`;
             } else if (h === 'Symbol') {
               const optionsLink = selectedValue === 'chain_list' 
-                ? `<a href="https://activegrt.github.io/Reports/chain_viewer.html?symbol=${row[h]}">📶</a>`
+                ? `<a href="https://activegrt.github.io/radar/chain_viewer.html?symbol=${row[h]}">📶</a>`
                 : '';
               
               // Determine button class and attributes based on details availability
@@ -857,8 +857,8 @@
 
     document.getElementById('model-select').addEventListener('change', function() {
       selectedValue = this.value;
-      pdfFilePath = 'https://activegrt.github.io/Reports/' + selectedValue + '.pdf';
-      fileUrl = 'https://activegrt.github.io/Reports/' + selectedValue + '.txt';
+      pdfFilePath = 'https://activegrt.github.io/radar/' + selectedValue + '.pdf';
+      fileUrl = 'https://activegrt.github.io/radar/' + selectedValue + '.txt';
       
       // Update file modified time
       fetch(fileUrl, { method: 'HEAD' })
