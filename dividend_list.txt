@@ -1,4 +1,5 @@
 [High Value - Dividend Announcements]
 Symbol,Rank,MTF,Quality Score,LTP,Dividend%,Announced,Executed,Volatility%,Details
+IOC,38,5.0,4,168.55,2.97,Dec-15,Dec-18,2.14,(Stock Name: INDIAN OIL CORP LTD; Sector: Energy; Intrinsic: 143.2; Dividend: 5.0; Revenue: 760254 cr; Net Profit: 24870 cr; Recommended: buy; Projected High: 207.0; Projected Medium: 173.0; Projected Low: 100.0; All time high: 202.13 => 17.0%; SMA 200: 145.63 => 13.6%; RSI: 60.9; Day Volatility: 2.14; Week Volatility: 4.56; Month Volatility: 7.48; Day Trend: Downtrend; Week Trend: Downtrend; Month Trend: Downtrend; Day Support: 110.72 => 34.31%; Week Support: 110.72 => 34.31%; Month Support: 65.2 => 61.32%; Day NWE: 154.3 => 8.46%; Week NWE: 132.73 => 21.25%; Month NWE: 114.19 => 32.25%)
 [Low Value - Dividend Announcements]
 Symbol,Rank,MTF,Quality Score,LTP,Dividend%,Announced,Executed,Volatility%,Details
