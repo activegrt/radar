@@ -131,6 +131,14 @@
       max-width: 100%;
       overflow-x: hidden;
     }
+    .content_summary {
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px;
+      background-color: white;
+      max-width: 50%;
+    }
 
     /* Sector Styles */
     .sector {
@@ -645,6 +653,7 @@
         const shouldExpand = isEquitySummary && sector === firstSector;
         const displayStyle = shouldExpand || isOnlyItem ? 'block' : 'none';
         const toggleSymbol = shouldExpand || isOnlyItem ? '➖' : '➕';
+        const header_class = selectedValue === 'eq_summary_list' ? 'sector' : 'content_summary';
 
         html += `<div class="sector">
           <div class="sector-header">
