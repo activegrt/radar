@@ -137,7 +137,8 @@
       border-radius: 6px;
       padding: 8px;
       background-color: white;
-      max-width: 50%;
+      max-width: 700px;
+      max-height: 1000px;
     }
 
     /* Sector Styles */
@@ -431,6 +432,7 @@
         <option value="undperf_list">Undervalued</option>
         <option value="eq_analysis_list">Discounted</option>
         <option value="gap_list">Open GAP</option>
+        <option value="mf_list">MF Stocks</option>
         <option value="chain_list">Options Chain</option>
         <option value="gtt_list">GTT Monitor</option>
         <option value="eq_summary_list">Equity Summary</option>
@@ -604,7 +606,7 @@
       
       // Track if we're rendering Equity Summary
       const isEquitySummary = selectedValue === 'eq_summary_list';
-      const isOnlyItem = ['chain_list', 'dividend_list', 'gap_list', 'gtt_list'].includes(selectedValue);
+      const isOnlyItem = ['chain_list', 'dividend_list', 'gap_list', 'mf_list', 'gtt_list'].includes(selectedValue);
       let firstSector = null;
 
       fileLines.forEach(line => {
@@ -643,7 +645,7 @@
           sectorData[currentSector].rows.push(row);
         }
       });
-
+	  
       for (const sector in sectorData) {
         const { headers, rows } = sectorData[sector];
         const displayHeaders = headers.filter(h => h !== 'Details');
@@ -653,13 +655,14 @@
         const shouldExpand = isEquitySummary && sector === firstSector;
         const displayStyle = shouldExpand || isOnlyItem ? 'block' : 'none';
         const toggleSymbol = shouldExpand || isOnlyItem ? '➖' : '➕';
-        const header_class = selectedValue === 'eq_summary_list' ? 'sector' : 'content_summary';
+        const header_class = isEquitySummary && sector === firstSector ? 'content_summary' : 'sector';
+			
 
-        html += `<div class="sector">
+        html += `<div class="${header_class}">
           <div class="sector-header">
             <button class="sector-toggle" onclick="toggleSector('${sector.replace(/'/g, "\\'")}')">${toggleSymbol}</button>
             <span class="sector-title">${sector}</span>
-            <span class="record-count">${rows.length} records</span>
+            ${isEquitySummary && sector === firstSector ? '' : `<span class="record-count">${rows.length} records</span>`}
           </div>
           <div id="grid-${escapedSector}" class="sector-grid" style="display:${displayStyle};">
             <div class="table-responsive-container">
