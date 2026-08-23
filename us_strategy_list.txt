@@ -1,6 +1,6 @@
 
 [Long Strangle - Buy OTM Call and OTM Put - Long Expiry]
-symbol,Volatility %,days,Last Change %,Strength,Rank,Intrinsic,PE,LTP,Call Strike,Call Premium,Put Strike,Put Premium,Total Premium %
+Symbol,Volatility %,days,Last Change %,Strength,Rank,Intrinsic,PE,LTP,Call Strike,Call Premium,Put Strike,Put Premium,Total Premium %
 XRPZ,0.58,117,12.61,S,,,,14.91,15,2.25,12,1.35,24.75
 OSIS,0.46,117,-10.13,F,1810,54.258,24.94,206.73,220,18,200,18.5,24.07
 OSIS,0.46,145,-10.13,F,1810,54.258,24.94,206.73,210,24.7,200,20.3,23.35
@@ -349,7 +349,7 @@ VMI,0.36,117,1,F,1054,89.447,18.98,485.83,500,35,480,34,17.119999999999997
 KLAR,0.75,117,1,M,1432,6.641,,14.33,15,1.85,12.5,1,24.560000000000002
 
 [Long Strangle - Buy OTM Call and OTM Put - Short Expiry]
-symbol,Volatility %,days,Last Change %,Strength,Rank,Intrinsic,PE,LTP,Call Strike,Call Premium,Put Strike,Put Premium,Total Premium %
+Symbol,Volatility %,days,Last Change %,Strength,Rank,Intrinsic,PE,LTP,Call Strike,Call Premium,Put Strike,Put Premium,Total Premium %
 OSIS,0.46,54,-10.13,F,1810,54.258,24.94,206.73,210,14,200,11.6,13.969999999999999
 SBSW,0.66,54,8.12,M,1086,1.7211747,,12.58,13,0.95,12,1.15,20.03
 MSTR,0.76,33,6.58,S,388,83.116,,119.25,120,11.8,115,9.3,18.32
@@ -999,7 +999,7 @@ WAT,0.39,89,-1,F,427,154.696,104.24,410.7,420,29.4,410,29,16.48
 KLAR,0.75,54,1,M,1432,6.641,,14.33,15,1.05,12.5,0.5,15.49
 
 [Bull Call Spread - Buy Call and Sell higher Call]
-symbol,days,burn_ratio,Strength,Rank,PE,Intrinsic,LTP,Base Strike,Base Premium,Target Strike,Target Premium,Total Premium,Return Value,Return %,Volatility %
+Symbol,days,burn_ratio,Strength,Rank,PE,Intrinsic,LTP,Base Strike,Base Premium,Target Strike,Target Premium,Total Premium,Return Value,Return %,Volatility %
 TGB,26,1.0121,M,1824,459.5,1.6764579,9.19,1,6.9,7,2.15,475,125,26.32,0.75
 PL,26,0.9615,M,1202,,1.245,22.29,18,5.3,20,3.7,159.99999999999997,40,25,1.01
 TGB,26,0.8772,M,1824,459.5,1.6764579,9.19,1,6.9,8,1.2,570,130,22.81,0.75
@@ -1217,7 +1217,7 @@ IREN,26,0.0389,S,783,54.39,7.814,41.88,31,12.5,36,7.55,495,5,1.01,1.11
 CELH,26,0.0389,M,1123,145.04,4.735,33.36,25,8.8,30,3.85,495.0000000000001,5,1.01,0.65
 
 [Bear Put Spread - Buy Put and Sell lower Put]
-symbol,days,burn_ratio,Strength,Rank,PE,Intrinsic,LTP,Base Strike,Base Premium,Target Strike,Target Premium,Total Premium,Return Value,Return %,Volatility %
+Symbol,days,burn_ratio,Strength,Rank,PE,Intrinsic,LTP,Base Strike,Base Premium,Target Strike,Target Premium,Total Premium,Return Value,Return %,Volatility %
 CLF,26,0.6261,M,1301,,9.822,11.27,25,12.9,20,8.6,430.00000000000006,70,16.28,0.65
 CIFR,26,0.508,M,1293,,1.357,15.77,21,5.85,18,3.2,264.99999999999994,35,13.21,1.16
 SMCI,26,0.4875,M,593,11.42,16.713,37.24,45,8.85,41,5.3,355,45,12.68,1.12
